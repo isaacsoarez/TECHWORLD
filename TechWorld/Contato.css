@@ -1,0 +1,160 @@
+
+body, h1, h2, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #13a7a7;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    background-color: #13a7a7;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0e8c8c;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.info-item {
+    flex: 1;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.info-item i {
+    font-size: 24px;
+    color: #13a7a7;
+    margin-bottom: 10px;
+}
+
+nav {
+    background-color: #13a7a7;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+#enviar-formulario {
+    background-color: #13a7a7;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#enviar-formulario:hover {
+    background-color: #0e8c8c;
+}
+
+.body2{
+    background-size: cover; 
+    background-position: center;
+    flex-direction: column; 
+    justify-content: center; 
+    height: 120px;
+}
+
+.navlist li a {
+    color: #fff; 
+    text-decoration: none; 
+    transition: color 0.3s; 
+    padding: 25px;
+}
+
+.navlist li a:hover {
+    color: #98dfdf;
+}
+
+.navlist{
+    display: flex;
+    }
+    
+    .navlist a {
+        margin:  0px 5px;
+        padding: 5px 10px;
+        color: #d6d6d6;
+        font-size: 17px;
+        font-weight: 500;
+        transition: all .50s ease;
+    }
+
+    .navlist a{
+        color: #fff;
+        padding: 1rem;
+        border-left: 2px solid #0fdddd;
+        margin: 1rem;
+        display: block;
+
+    }
+    .navlist a:hover{
+        background: #000000;
+        color:#f3f3f3 ;
+    }
+    .navlist.open{
+        top: 100%;
+    }
