@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="Login.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');">
+<link rel="shortcut icon" href="img/icon.png" type="imagens/x-icon">
+
+<title>Tela de Boas-Vindas</title>
+<style>
+  
+  *{font-family: 'Black Ops One', initial ;}
+  body {
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    background-image: url(img/ÁREA\ DE\ LOGIN\(3\).jpg);
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  .welcome-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 2px solid black;
+  }
+  .hidden {
+    display: none;
+  }
+  button {
+    background-color: #000000;
+    color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #000000;
+    color: white;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+</style>
+</head>
+<body>
+
+  <div class="welcome-container">
+  <h2>Bem-vindo ao nosso site!</h2>
+  <p>Clique no botão abaixo para fazer login:</p>
+  
+  <button id="enterButton">Entrar</button>
+  
+  <div id="userInfo" class="hidden">
+    <h3>Informações do Usuário</h3>
+    <p><strong>Nome:</strong> <span id="userName"></span></p>
+    <p><strong>Idade:</strong> <span id="userAge"></span></p>
+    <p><strong>Telefone:</strong> <span id="userPhone"></span></p>
+    <p><b>ACESSO PERMITIDO</b></p>
+    <p>Clique para ser direcionado a TechWorld</p>
+    <a href="Techworld.html"><button id="enterButton">TechWorld</button></a>
+  
+  </div>
+  </div>
+
+<script>
+  const enterButton = document.getElementById('enterButton');
+  const userInfo = document.getElementById('userInfo');
+  const userNameSpan = document.getElementById('userName');
+  const userAgeSpan = document.getElementById('userAge');
+  const userPhoneSpan = document.getElementById('userPhone');
+
+  enterButton.addEventListener('click', () => {
+    const name = prompt('Digite seu nome:');
+    const age = prompt('Digite sua idade:');
+    const phone = prompt('Digite seu telefone:');
+
+    if (name && age && phone) {
+      userNameSpan.textContent = name;
+      userAgeSpan.textContent = age;
+      userPhoneSpan.textContent = phone;
+
+      userInfo.classList.remove('hidden');
+      enterButton.disabled = true;
+    } else {
+      alert('Por favor, preencha todas as informações.');
+    }
+  });
+</script>
+</body>
+</html>
