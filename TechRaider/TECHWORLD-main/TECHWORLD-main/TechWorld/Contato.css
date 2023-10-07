@@ -186,18 +186,18 @@ section{
 
 .email{
     position: relative;
-    margin-top: -840px;
+    margin-top: -62%;
     margin-right: 100px;
 
 }
 .text {
     justify-items: legacy;
-    margin-top: -700px;
+    margin-top: -52%;
     margin-left: -350px;
 }
 
 .empresa{
-    margin-top: -578px;
+    margin-top: -43%;
     margin-left: -400px;
 }
 
@@ -209,27 +209,26 @@ section{
 }
 .text2 {
     justify-items: legacy;
-    margin-top: -1395px;
+    margin-top: -104%;
     margin-left: -350px;
 }
 
 .tel2{
-    margin-top: -1275px;
+    margin-top: -94%;
     margin-left: -300px;
 }
 
 .redes{
     margin-top: 14.5%;
     margin-right: 270px;
-
 }
 .redes1{
-    margin-top: 259px;
+    margin-top: 19.4%;
     margin-left: -490px;
 }
 
 .redes2{
-    margin-top: 324px;
+    margin-top: 24%;
     margin-left: -230px;
     margin-right: -30px;
 }
